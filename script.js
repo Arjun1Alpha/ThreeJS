@@ -23,13 +23,13 @@ function requestGyroscopePermission() {
       .then(permissionState => {
         if (permissionState === 'granted') {
           window.addEventListener('deviceorientation', handleOrientation);
-          window.addEventListener('devicemotion', handleOrientation);
+         // window.addEventListener('devicemotion', handleOrientation);
         }
       })
       .catch(console.error);
   } else {
     window.addEventListener('deviceorientation', handleOrientation);
-    window.addEventListener('devicemotion', handleOrientation);
+    // window.addEventListener('devicemotion', handleOrientation);
   }
 }
 
