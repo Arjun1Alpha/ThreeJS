@@ -1,0 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#example, #features { display: block; margin-top: 2em; position: absolute; top: 0; color: white;}
